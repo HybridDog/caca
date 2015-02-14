@@ -143,12 +143,12 @@ minetest.register_node("caca:caca_flowing", {
 	tiles = {"default_lava.png"},
 	special_tiles = {
 		{
-			image="caca_flowing_animated.png",
+			name="caca_flowing_animated.png",
 			backface_culling=false,
 			animation={type="vertical_frames", aspect_w=16, aspect_h=16, length=3.3}
 		},
 		{
-			image="caca_flowing_animated.png",
+			name="caca_flowing_animated.png",
 			backface_culling=true,
 			animation={type="vertical_frames", aspect_w=16, aspect_h=16, length=3.3}
 		},
