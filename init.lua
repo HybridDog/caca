@@ -241,3 +241,19 @@ minetest.register_craft({
 		{'caca:caca_ingot', 'caca:caca_ingot', 'caca:caca ingot' },
 	}
 })
+
+minetest.register_craft({
+	output = '"caca:toilet" 1',
+	recipe = {
+		{'default:cobble', '', ''},
+		{'default:paper', 'default:cobble', 'default:cobble'},
+		{'default:cobble', 'default:cobble', 'default:cobble'},
+	}
+})
+
+minetest.register_node("caca:toilet", {
+    description = "Toilet",
+    tiles = {"caca_toilet_top.png","caca_toilet_bottom.png","caca_toilet_side.png","caca_toilet_side.png","caca_toilet_front.png"},
+    paramtype2 = "facedir",
+    groups = {snappy=1,choppy=2,oddly_breakable_by_hand=2},
+})
