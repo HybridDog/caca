@@ -1,13 +1,13 @@
 minetest.register_node("caca:caca_block", {
-    description = "Poop block",
-    tiles = {"caca_block.png"},
-    groups = {snappy=1,choppy=2,oddly_breakable_by_hand=2},
+	description = "Poop block",
+	tiles = {"caca_block.png"},
+	groups = {snappy=1,choppy=2,oddly_breakable_by_hand=2},
 })
 
 minetest.register_node("caca:caca_brick", {
-    description = "Shitty cobble",
-    tiles = {"caca_bricks.png"},
-    groups = {snappy=1,choppy=2,oddly_breakable_by_hand=2},
+	description = "Shitty cobble",
+	tiles = {"caca_bricks.png"},
+	groups = {snappy=1,choppy=2,oddly_breakable_by_hand=2},
 })
 
 
@@ -30,14 +30,14 @@ minetest.register_craft({
 })
 
 minetest.register_tool("caca:caca_pickaxe", {
-    description = "Shitty Pickaxe",
+	description = "Shitty Pickaxe",
 	inventory_image = "caca_pick.png",
 tool_capabilities = {
 		max_drop_level=0,
 		groupcaps={
 			cracky={times={[2]=2.00, [3]=1.20}, uses=15, maxlevel=1}
 		}
-        },
+		},
 })
 
 minetest.register_craft({
@@ -213,15 +213,15 @@ minetest.register_craftitem("caca:caca_ingot", {
 })
 
 minetest.register_node("caca:caca_cobble", {
-    description = "Poop cobble",
-    tiles = {"caca_brick.png"},
-    groups = {snappy=1,choppy=2,oddly_breakable_by_hand=2},
+	description = "Poop cobble",
+	tiles = {"caca_brick.png"},
+	groups = {snappy=1,choppy=2,oddly_breakable_by_hand=2},
 })
 
 minetest.register_node("caca:caca_bricks", {
-    description = "Poop Bricks",
-    tiles = {"caca_brickk.png"},
-    groups = {snappy=1,choppy=2,oddly_breakable_by_hand=2},
+	description = "Poop Bricks",
+	tiles = {"caca_brickk.png"},
+	groups = {snappy=1,choppy=2,oddly_breakable_by_hand=2},
 })
 
 minetest.register_craft({
@@ -252,8 +252,9 @@ minetest.register_craft({
 })
 
 minetest.register_node("caca:toilet", {
-    description = "Toilet",
-    tiles = {"caca_toilet_top.png","caca_toilet_bottom.png","caca_toilet_side.png","caca_toilet_side.png","caca_toilet_front.png"},
-    paramtype2 = "facedir",
-    groups = {snappy=1,choppy=2,oddly_breakable_by_hand=2},
+	description = "Toilet",
+	tiles = {"caca_ingot.png"},
+	--tiles = {"caca_toilet_top.png","caca_toilet_bottom.png","caca_toilet_side.png","caca_toilet_side.png","caca_toilet_front.png"},
+	paramtype2 = "facedir",
+	groups = {snappy=1,choppy=2,oddly_breakable_by_hand=2},
 })
