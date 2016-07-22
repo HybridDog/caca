@@ -11,43 +11,43 @@ minetest.register_node("caca:caca_brick", {
 })
 
 
-minetest.register_craft({
-	output = '"caca:caca_paper" 1',
+minetest.register_craft{
+	output = "caca:caca_paper",
 	recipe = {
-		{'default:paper', '', ''},
-		{'', '', ''},
-		{'', '', ''},
+		{"default:paper", "", ""},
+		{"", "", ""},
+		{"", "", ""},
 	}
-})
+}
 
-minetest.register_craft({
-	output = '"caca:caca_block" 1',
+minetest.register_craft{
+	output = "caca:caca_block",
 	recipe = {
-		{'', '', ''},
-		{'', '', ''},
-		{'caca:caca_paper', 'caca:caca_paper', 'caca:caca_paper'},
+		{"", "", ""},
+		{"", "", ""},
+		{"caca:caca_paper", "caca:caca_paper", "caca:caca_paper"},
 	}
-})
+}
 
 minetest.register_tool("caca:caca_pickaxe", {
 	description = "Shitty Pickaxe",
 	inventory_image = "caca_pick.png",
-tool_capabilities = {
+	tool_capabilities = {
 		max_drop_level=0,
 		groupcaps={
 			cracky={times={[2]=2.00, [3]=1.20}, uses=15, maxlevel=1}
 		}
-		},
+	},
 })
 
-minetest.register_craft({
-	output = '"caca:caca_pickaxe" 1',
+minetest.register_craft{
+	output = "caca:caca_pickaxe",
 	recipe = {
-		{'caca:caca_block', 'caca:caca_block', 'caca:caca_block'},
-		{'', 'default:stick', ''},
-		{'', 'default:stick', ''},
+		{"caca:caca_block", "caca:caca_block", "caca:caca_block"},
+		{"", "default:stick", ""},
+		{"", "default:stick", ""},
 	}
-})
+}
 minetest.register_tool("caca:caca_shovel", {
 	description = "Shitty shovel",
 	inventory_image = "caca_shovel.png",
@@ -60,14 +60,14 @@ minetest.register_tool("caca:caca_shovel", {
 	},
 })
 
-minetest.register_craft({
-	output = '"caca:caca_shovel" 1',
+minetest.register_craft{
+	output = "caca:caca_shovel",
 	recipe = {
-		{'', 'caca:caca_block', ''},
-		{'', 'default:stick', ''},
-		{'', 'default:stick', ''},
+		{"", "caca:caca_block", ""},
+		{"", "default:stick", ""},
+		{"", "default:stick", ""},
 	}
-})
+}
 
 minetest.register_tool("caca:caca_sword", {
 	description = "Shitty sword",
@@ -83,14 +83,14 @@ minetest.register_tool("caca:caca_sword", {
 	}
 })
 
-minetest.register_craft({
-	output = '"caca:caca_sword" 1',
+minetest.register_craft{
+	output = "caca:caca_sword",
 	recipe = {
-		{'', 'caca:caca_block', ''},
-		{'', 'caca:caca_block', ''},
-		{'', 'default:stick', ''},
+		{"", "caca:caca_block", ""},
+		{"", "caca:caca_block", ""},
+		{"", "default:stick", ""},
 	}
-})
+}
 
 minetest.register_craftitem("caca:caca_chunk", {
 	description = "Poop chunk",
@@ -98,23 +98,23 @@ minetest.register_craftitem("caca:caca_chunk", {
 	on_use = minetest.item_eat(1),
 })
 
-minetest.register_craft({
-	output = '"caca:caca_chunk" 9',
+minetest.register_craft{
+	output = "caca:caca_chunk 9",
 	recipe = {
-		{'', '', ''},
-		{'', 'caca:caca_block', ''},
-		{'', '', ''},
+		{"", "", ""},
+		{"", "caca:caca_block", ""},
+		{"", "", ""},
 	}
-})
+}
 
-minetest.register_craft({
-	output = '"caca:caca_block" 1',
+minetest.register_craft{
+	output = "caca:caca_block",
 	recipe = {
-		{'caca:caca_chunk', 'caca:caca_chunk', 'caca:caca_chunk'},
-		{'caca:caca_chunk', 'caca:caca_chunk', 'caca:caca_chunk'},
-		{'caca:caca_chunk', 'caca:caca_chunk', 'caca:caca_chunk'},
+		{"caca:caca_chunk", "caca:caca_chunk", "caca:caca_chunk"},
+		{"caca:caca_chunk", "caca:caca_chunk", "caca:caca_chunk"},
+		{"caca:caca_chunk", "caca:caca_chunk", "caca:caca_chunk"},
 	}
-})
+}
 
 minetest.register_craftitem("caca:caca_glass", {
 	description = "Glass of poop",
@@ -122,14 +122,14 @@ minetest.register_craftitem("caca:caca_glass", {
 	on_use = minetest.item_eat(8),
 })
 
-minetest.register_craft({
-	output = '"caca:caca_glass" 1',
+minetest.register_craft{
+	output = "caca:caca_glass",
 	recipe = {
-		{'', '', ''},
-		{'', 'caca:caca_block', ''},
-		{'', 'vessels:drinking_glass', ''},
+		{"", "", ""},
+		{"", "caca:caca_block", ""},
+		{"", "vessels:drinking_glass", ""},
 	}
-})
+}
 
 minetest.register_craftitem("caca:caca_paper", {
 	description = "Shitty paper",
@@ -192,20 +192,20 @@ minetest.register_node("caca:caca_source", {
 	groups = {liquid=2, puts_out_fire=1},
 })
 
-minetest.register_craft({
-	output = '"caca:caca_brick" 4',
+minetest.register_craft{
+	output = "caca:caca_brick 4",
 	recipe = {
-		{'', '', ''},
-		{'caca:caca_block', 'caca:caca_block', ''},
-		{'caca:caca_block', 'caca:caca_block', ''},
+		{"", "", ""},
+		{"caca:caca_block", "caca:caca_block", ""},
+		{"caca:caca_block", "caca:caca_block", ""},
 	}
-})
+}
 
-minetest.register_craft({
+minetest.register_craft{
 	type = "cooking",
 	output = "caca:caca_ingot",
 	recipe = "caca:caca_block",
-})
+}
 
 minetest.register_craftitem("caca:caca_ingot", {
 	description = "Shitty ingot",
@@ -224,32 +224,32 @@ minetest.register_node("caca:caca_bricks", {
 	groups = {snappy=1,choppy=2,oddly_breakable_by_hand=2},
 })
 
-minetest.register_craft({
-	output = '"caca:caca_bricks" 4',
+minetest.register_craft{
+	output = "caca:caca_bricks 4",
 	recipe = {
-		{'', '', ''},
-		{'caca:caca_ingot', 'caca:caca_ingot', ''},
-		{'caca:caca_ingot', 'caca:caca_ingot', ''},
+		{"", "", ""},
+		{"caca:caca_ingot", "caca:caca_ingot", ""},
+		{"caca:caca_ingot", "caca:caca_ingot", ""},
 	}
-})
+}
 
-minetest.register_craft({
-	output = '"caca:caca_cobble" 4',
+minetest.register_craft{
+	output = "caca:caca_cobble 4",
 	recipe = {
-		{'', '', ''},
-		{'', 'caca:caca_ingot', ''},
-		{'caca:caca_ingot', 'caca:caca_ingot', 'caca:caca ingot' },
+		{"", "", ""},
+		{"", "caca:caca_ingot", ""},
+		{"caca:caca_ingot", "caca:caca_ingot", "caca:caca ingot" },
 	}
-})
+}
 
-minetest.register_craft({
-	output = '"caca:toilet" 1',
+minetest.register_craft{
+	output = "caca:toilet",
 	recipe = {
-		{'default:cobble', '', ''},
-		{'default:paper', 'default:cobble', 'default:cobble'},
-		{'default:cobble', 'default:cobble', 'default:cobble'},
+		{"default:cobble", "", ""},
+		{"default:paper", "default:cobble", "default:cobble"},
+		{"default:cobble", "default:cobble", "default:cobble"},
 	}
-})
+}
 
 minetest.register_node("caca:toilet", {
 	description = "Toilet",
